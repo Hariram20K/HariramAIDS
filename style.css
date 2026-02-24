@@ -850,6 +850,49 @@ footer i {
     transform: scale(1.05);
 }
 
+.cert-pdf-icon {
+    flex-direction: column;
+    font-size: 3rem;
+    color: white;
+    gap: 1rem;
+    position: relative;
+}
+
+.cert-pdf-icon i {
+    font-size: 4rem;
+    opacity: 0.9;
+    animation: float 3s ease-in-out infinite;
+}
+
+.cert-pdf-icon span {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 90%;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.certificate-item:hover .cert-pdf-icon i {
+    animation: float 2s ease-in-out infinite, colorPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes colorPulse {
+    0%, 100% {
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
 .cert-details {
     padding: 1.5rem;
     flex: 1;
