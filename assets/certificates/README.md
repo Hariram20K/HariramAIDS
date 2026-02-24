@@ -33,7 +33,7 @@ The certificate viewer on your portfolio currently displays 3 internship certifi
   - `Zscaler_ZTCA.jpg` - Thumbnail/preview image
   - `Zscaler_ZTCA_Certification.pdf` - Full certificate PDF
 
-### 3. **Ethical Hacking & Bug Hunting Trainee** - Cyfotok Infosec LLP
+### 3. **Ethical Hacking & Bug Hunting Trainee** - Cappricio Sec University
 - **Period:** August 2024
 - **Files:**
   - `Cyfotok_CEH_Training.jpg` - Thumbnail/preview image
