@@ -67,3 +67,28 @@ contactForm.addEventListener('submit', (e) => {
     alert('Thank you for reaching out, Hariram! This form is a demo, but your message intent was captured.');
     contactForm.reset();
 });
+// Certificate Modal Functions
+function openCertificateViewer() {
+    const modal = document.getElementById('certificateModal');
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent body scroll
+}
+
+function closeCertificateViewer() {
+    const modal = document.getElementById('certificateModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto'; // Re-enable body scroll
+}
+
+// Close modal when pressing Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeCertificateViewer();
+    }
+});
+
+// Close modal when clicking overlay (but not on the container itself)
+const certificateOverlay = document.querySelector('.certificate-overlay');
+if (certificateOverlay) {
+    certificateOverlay.addEventListener('click', closeCertificateViewer);
+}
