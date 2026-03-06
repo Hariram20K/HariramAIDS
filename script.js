@@ -92,3 +92,27 @@ const certificateOverlay = document.querySelector('.certificate-overlay');
 if (certificateOverlay) {
     certificateOverlay.addEventListener('click', closeCertificateViewer);
 }
+
+// Hackathon Image Viewer Functions
+function openHackathonImage(element) {
+    const img = element.querySelector('img');
+    const modal = document.getElementById('hackathonImageModal');
+    const modalImg = document.getElementById('hackathonModalImg');
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeHackathonImage() {
+    const modal = document.getElementById('hackathonImageModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// Close hackathon modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeHackathonImage();
+    }
+});

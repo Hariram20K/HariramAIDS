@@ -23,6 +23,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#hackathons">Hackathons</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -244,6 +245,68 @@
                 </div>
             </div>
         </section>
+
+        <!-- Hackathons Section -->
+        <section id="hackathons" class="hackathons">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="reveal">Hackathons</h2>
+                    <div class="underline reveal"></div>
+                </div>
+                <div class="hackathon-card reveal">
+                    <div class="hackathon-header">
+                        <div class="hackathon-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="hackathon-title-info">
+                            <h3>INNOBYTE – AI Student Hackathon 2026</h3>
+                            <p class="hackathon-venue"><i class="fas fa-map-marker-alt"></i> Department of Scientific Computing, SIMATS Engineering, Chennai</p>
+                            <span class="date">Feb 26, 2026</span>
+                        </div>
+                    </div>
+                    <p class="hackathon-description">Secured 3rd Place in the INNOBYTE – AI Student Hackathon 2026 organized by the Department of Scientific Computing at SIMATS Engineering, Chennai. Competed against talented teams, demonstrating problem-solving skills, teamwork, and technical expertise in AI.</p>
+                    <div class="hackathon-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-medal"></i>
+                            <span>3rd Place</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Hackathon</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-university"></i>
+                            <span>SIMATS Engineering</span>
+                        </div>
+                    </div>
+                    <div class="hackathon-gallery">
+                        <div class="gallery-item" onclick="openHackathonImage(this)">
+                            <img src="assets/hackathons/prize.jpeg" alt="3rd Place Prize - INNOBYTE AI Hackathon 2026">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-expand"></i>
+                                <span>Prize Photo</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item" onclick="openHackathonImage(this)">
+                            <img src="assets/hackathons/certificate.jpeg" alt="INNOBYTE AI Hackathon Certificate">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-expand"></i>
+                                <span>Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hackathon Image Viewer Modal -->
+        <div id="hackathonImageModal" class="hackathon-image-modal">
+            <div class="hackathon-modal-overlay" onclick="closeHackathonImage()"></div>
+            <div class="hackathon-modal-content">
+                <button class="close-btn" onclick="closeHackathonImage()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <img id="hackathonModalImg" src="" alt="Hackathon Image">
+            </div>
+        </div>
 
         <!-- Contact Section -->
         <section id="contact" class="contact">
